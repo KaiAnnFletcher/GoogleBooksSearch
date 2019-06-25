@@ -14,9 +14,9 @@ export default {
         return axios.post("/api/books", bookData);
       },
 
-    // Deletes the book with the given id
+    // Deletes the book with the given id which will only be in the saved books page
     deleteBook: function(id) {
-    return axios.delete("/api/books/" + id)
+    return axios.delete("/api/savedbooks/" + id)
     },
 
     // Gets the saved book with the given id
